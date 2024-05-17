@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="http://www.geoplugin.net/javascript.gp"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   </head>
   <body>
     <ul>
@@ -16,6 +17,7 @@
       <li>Your currencySymbol is: <span id="currencySymbol"></span></li>
     </ul>
     <script>
+      
       var ip = geoplugin_request();
       var city = geoplugin_city();
       var region = geoplugin_region();
