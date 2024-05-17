@@ -1,7 +1,5 @@
 function App() {
   
-  const simbolo: string = geoplugin_currencySymbol();
-
   return (
     <div className='w-full flex flex-col justify-center items-center'>
       <h1 className='text-3xl font-bold'>Geolocalización Online</h1>
@@ -9,7 +7,7 @@ function App() {
 
       <div className="w-full sm:w-8/12 lg:6/12 border border-red-500 rounded-md text-2xl gap-3 flex flex-col justify-center items-center">
           
-          <p>IP: {geoplugin_request()}</p>
+          <p>IP:</p>
           <p>Ciudad: {geoplugin_city()}</p>
           <p>Estado: {geoplugin_region()}</p>
           <p>Código de Región: {geoplugin_regionCode()}</p>
